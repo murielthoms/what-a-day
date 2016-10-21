@@ -1,7 +1,27 @@
-.valider {
-	text-align: center;
-} 
-
-.content {
-	text-align: center;
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #34314c;
 }
+
+.error {
+	text-align: center;
+	background-color: #ff7473;
+	color:#fff;
+}
+
+.valider {
+	border:solid 2px #47b8e0;
+	background-color: #34314c;
+	color: #47b8e0;
+	
+}
+input {
+	border:solid 2px #47b8e0;
+	background-color: #34314c;
+	color: #47b8e0;
+
+}
+ .content {
+ 	text-align: center;
+ }

@@ -6,32 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div class="overlay" id="affichage"></div>
+<div class="error" id="message"></div>
 	<section class="content">
-			
-			<input type="number" id="days" placeholder="Jours">
 
-		<select name="mois">
-			<option value="value13">Mois</option>
-			<option value="value1">Janvier</option>
-			<option value="value2">Février</option>
-			<option value="value3">Mars</option>
-			<option value="value4">Avril</option>
-			<option value="value5">Mai</option>
-			<option value="value6">Juin</option>
-			<option value="value7">Juillet</option>
-			<option value="value8">Août</option>
-			<option value="value9">septembre</option>
-			<option value="value10">Octobre</option>
-			<option value="value11">November</option>
-			<option value="value12">Décembre</option>
+		<input type="number" id="days">
+
+		<select id="mois">
+			<option value="01">Janvier</option>
+			<option value="02">Février</option>
+			<option value="03">Mars</option>
+			<option value="04">Avril</option>
+			<option value="05">Mai</option>
+			<option value="06">Juin</option>
+			<option value="07">Juillet</option>
+			<option value="08">Août</option>
+			<option value="09">septembre</option>
+			<option value="10">Octobre</option>
+			<option value="11">November</option>
+			<option value="12">Décembre</option>
 
 		</select>
-			
-				<input type="number" id="years" placeholder="Années">
 
-			<div class="btValider">
-				<button id="valider">Valider</button>
-			</div>
+
+		<input type="number" id="years">
+
+		<div class="btValider">
+			<button id="valider" class="valider">Valider</button>
+		</div>
+		<div class="overlay">
 
 	</section>
 
@@ -39,6 +42,7 @@
 
 	<script type="text/javascript" src = "node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/moment/moment.js"></script>
+	<script src="node_modules/moment/locale/fr.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
