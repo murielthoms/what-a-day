@@ -1,7 +1,11 @@
 (function() {
 	"use strict"
 	var app = {  
+
 		jours: null,
+		mois : null,
+		ans : null,
+
 
 		init: function() {
 			this.listeners();
@@ -9,32 +13,46 @@
 
 		
 		listeners:function() {
-			$('#valider').on('click', this.valeurDate.bind(this));
+			$('#valider').on('click', this.dates.bind(this));
+			$('#restart').on('click', this.restart.bind(this));
 		},
 		
-		valeurDate: function() {
+		dates: function() {
 			this.jours =($('#days').val());
-			var mois =($('#mois').val());
-			var ans =($('#years').val());	
+			this.mois =($('#mois').val());
+			this.ans =($('#years').val());	
+			var date = moment(this.jours + this.mois + this.ans, 'DD-MM-YYYY').format('dddd');
+			$('#affichage').append(date);
 			this.updateView();
-			this.erreur();
-			console.log(moment(this.jours + mois+ ans, 'DD-MM-YYY').format('dddd'));
+
+			
 		},
 
 		updateView: function() {
 
-			if(this.jours < 0 || this.jours > 31){
-
-				return this.erreur() + ($('days').css('borderColor', '#ff7473'));
+			if(this.jours < 0 || this.jours > 31 || this.ans < 0){
+				this.erreur();
 			}
+			
+			
 		},
 		erreur: function() {
-			var error = $('#message').text("Le jour doit être compris entre 1 et 31 !");
+			$('#message').text("Le jour doit être compris entre 1 et 31 !");
+			$('#days').css('border', '2px solid #ff7473');
+			$('#affichage').show();
+
 
 		},
+		restart: function(){
+			$('#affichage').hide();
+			this.jours =($('#days').val(''));
+			this.mois =($('#mois').val(''));
+			this.ans =($('#years').val(''));	
+		
+		},
+	};
 
-	}
 
-app.init();
+	app.init();
 
 })();

@@ -16,6 +16,11 @@ body {
 	color: #47b8e0;
 	
 }
+#mois {
+	border:solid 2px #47b8e0;
+	background-color: #34314c;
+	color: #47b8e0;
+}
 input {
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
@@ -24,4 +29,13 @@ input {
 }
  .content {
  	text-align: center;
+ }
+
+ .overlay {
+ 	background-color: #D499B9;
+ 	font-size: 100pt;
+ 	/*height: 100vh;*/
+ 	text-align: center;
+ 	padding-top: 15%;
+
  }
