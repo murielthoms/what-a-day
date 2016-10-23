@@ -2,40 +2,97 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #34314c;
-}
+	color:#47b8e0;
+	font-family: Open Sans Bold;
+	
 
+}
 .error {
+	font-family: Open Sans Bold;
+	font-size: 40px;
 	text-align: center;
 	background-color: #ff7473;
 	color:#fff;
-}
 
-.valider {
+}
+.verifier {
+	margin-bottom: 50%;
+	margin-top: -25%;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	color: #47b8e0;
+	font-family: Open Sans Bold;
+	margin-left: 45%;
+	font-size: 30px;
+	
 	
 }
+#restart {
+	align-items: center;
+	border:solid 2px #47b8e0;
+	background-color: #34314c;
+	color: #47b8e0;
+	font-family: Open Sans Bold;
+	font-size: 40px;
+	margin-left: 45%;	
+}
 #mois {
+	align-content: center;
+	align-items: center;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	color: #47b8e0;
+	font-size: 40px;
+	font-family: Open Sans Bold;
+
 }
-input {
+#days {
+	margin-top:10%;
+	margin-left: 300px;
+	align-content: center;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
+	font-size: 30px;
 	color: #47b8e0;
+	align-items: center;
+	font-family: Open Sans Bold;
+	text-align: center;
 
 }
- .content {
- 	text-align: center;
- }
+#years {
+	align-content: center;
+	align-items: center;;
+	border:solid 2px #47b8e0;
+	background-color: #34314c;
+	font-size: 30px;
+	color:#47b8e0;
+	font-family: Open Sans Bold;
+	text-align: center;
 
- .overlay {
- 	background-color: #D499B9;
- 	font-size: 100pt;
- 	/*height: 100vh;*/
- 	text-align: center;
- 	padding-top: 15%;
+}
+.overlay {
+	background-color: #9055A2;
+	color: #D499B9;
+	font-size: 100pt;
+	height: 100vh;
+	width: 100vw;
+	line-height: 100vh;
+	text-align: center;
+	font-family: Open Sans Bold;
+}
 
- }
+.content {
+	height: 100vh;
+	align-items: center;
+
+}
+button:hover {
+	background-color:#47b8e0;
+	color:#FFF;
+}
+
+
+
+
+
+
