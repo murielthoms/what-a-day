@@ -1,94 +1,114 @@
 body {
+
 	padding: 0;
 	margin: 0;
 	background-color: #34314c;
 	color:#47b8e0;
-	font-family: Open Sans Bold;
-	
+	font-family: "Open Sans", "Sans Serif";	
 
 }
 .error {
-	font-family: Open Sans Bold;
-	font-size: 40px;
+	
+	font-size: 30px;
 	text-align: center;
 	background-color: #ff7473;
 	color:#fff;
 
 }
-.verifier {
-	margin-bottom: 50%;
-	margin-top: -25%;
+#verif {
+
+	margin-left: 200px;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	color: #47b8e0;
-	font-family: Open Sans Bold;
-	margin-left: 45%;
 	font-size: 30px;
-	
-	
+	width: 200px;
+
 }
 #restart {
-	align-items: center;
-	border:solid 2px #47b8e0;
-	background-color: #34314c;
-	color: #47b8e0;
-	font-family: Open Sans Bold;
-	font-size: 40px;
-	margin-left: 45%;	
+	
+	margin-left:700px;
+	width:90px;
+	height:90px;
+	box-shadow:2px 2px 8px ; 
+	border-radius:50%;
+	position: absolute;
+	top:45px;
+	background-color: transparent;
+	color: #D499B9;
+	font-size: 30px;
 }
 #mois {
-	align-content: center;
-	align-items: center;
+
+	width: 200px;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	color: #47b8e0;
-	font-size: 40px;
-	font-family: Open Sans Bold;
+	font-size: 30px;	
 
 }
 #days {
-	margin-top:10%;
-	margin-left: 300px;
-	align-content: center;
+
+	width: 200px;
+	text-align: center;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	font-size: 30px;
 	color: #47b8e0;
-	align-items: center;
-	font-family: Open Sans Bold;
-	text-align: center;
-
+	
 }
 #years {
-	align-content: center;
-	align-items: center;;
+
+	width: 200px;
+	height: 40px;
+	text-align: center;;
 	border:solid 2px #47b8e0;
 	background-color: #34314c;
 	font-size: 30px;
 	color:#47b8e0;
-	font-family: Open Sans Bold;
-	text-align: center;
-
+	
 }
 .overlay {
+
+	display: flex;
+	justify-content:center;
+	display : none;
+	text-align: center;
 	background-color: #9055A2;
 	color: #D499B9;
 	font-size: 100pt;
 	height: 100vh;
 	width: 100vw;
 	line-height: 100vh;
-	text-align: center;
-	font-family: Open Sans Bold;
+	
 }
-
 .content {
-	height: 100vh;
+
+	display: flex;
+	justify-content: center;
 	align-items: center;
+	height: 100vh;
 
 }
-button:hover {
+.column {
+
+	display: flex;
+	flex-direction: column;
+	
+}
+.row{
+
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 1em;
+
+}
+#verif:hover {
+	
+	cursor: pointer;
 	background-color:#47b8e0;
 	color:#FFF;
+
 }
 
 

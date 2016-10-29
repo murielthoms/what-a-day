@@ -11,7 +11,6 @@
 			this.listeners();
 		},
 
-		
 		listeners:function() {
 			$('#verif').on('click', this.dates.bind(this));
 			$('#restart').on('click', this.restart.bind(this));
@@ -22,11 +21,14 @@
 			this.mois =($('#mois').val());
 			this.ans =($('#years').val());	
 			var date = moment(this.jours + this.mois + this.ans, 'DD-MM-YYYY').format('dddd');
+
+			if(date){
+				$('.content').hide();
+				$('#affichage').show();
+			};
+
 			$('#affichage').append(date);
-			this.updateView();
-
-
-			
+			this.updateView();	
 		},
 
 		updateView: function() {
@@ -34,18 +36,17 @@
 			if(this.jours < 0 || this.jours > 31 || this.ans < 0){
 				this.erreur();
 			}
-			
 		},
+
 		erreur: function() {
-			$('#message').text("Le jour doit être compris entre 1 et 31 !");
+			$("#message").text("Le jour doit être compris entre 1 et 31 !");     
 			$('#days').css('border', '2px solid #ff7473');
-			$('#affichage').show();
+			$('.content').show();	
 		},
+
 		restart: function(){
-			$('#affichage').hide();
-			this.jours =($('#days').val(''));
-			this.ans =($('#years').val(''));
-			this.mois = ($('#mois').val(''))
+
+			location.reload(true);
 		},
 	};
 
