@@ -29,7 +29,7 @@ Codes hexadécimaux des couleurs utilisées :
 - #ff7473
 - #fff
 - #34314c
-- #47b8e0
+- ##00BFFF
 - #9055A2;
 - #D499B9;
 
